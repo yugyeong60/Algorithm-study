@@ -1,6 +1,8 @@
+package D2;
+
 import java.util.Scanner;
 
-class Solution {
+class _1979 {
 	public static void main(String args[]) throws Exception {
 
 		Scanner sc = new Scanner(System.in);
