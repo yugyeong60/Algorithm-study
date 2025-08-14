@@ -20,7 +20,7 @@ import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class _1824 {
+class _1824_1 {
     static class State {
         int row, col, dir, num;
         State(int r, int c, int d, int n) { row = r; col = c; dir = d; num = n; }
