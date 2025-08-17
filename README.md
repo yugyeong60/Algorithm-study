@@ -1,4 +1,4 @@
-## SW Aptitude Test A형 준비
+## SW Aptitude Test IM 준비
 
 <br><br>
 
