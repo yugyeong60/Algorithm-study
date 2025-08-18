@@ -1,4 +1,4 @@
-package D3
+package D3;
 
 import java.util.Scanner;
 
