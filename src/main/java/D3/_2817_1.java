@@ -20,7 +20,7 @@ class Solution {
 			dp[0] = 1;
 
 			for (int i = 0; i < N; i++) {
-				for (int k = K; k >= nums[i]; k++) {
+				for (int k = K; k >= nums[i]; k--) {
 					dp[k] += dp[k - nums[i]];
 				}
 			}
