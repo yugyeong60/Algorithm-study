@@ -52,6 +52,8 @@ class Solution {
 		for (int i = 0; i < N - 1; i++) {
 			if (!used[i]) {
 
+                if (i > 0 && oper[i] == oper[i-1] && !used[i-1]) continue;
+
 				int tmp = num;
 
 				if (oper[i] == 0)
