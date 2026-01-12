@@ -1,0 +1,62 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+class Main {
+    public static void main(String args[]) throws Exception {
+
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int M = sc.nextInt();
+
+        int[][] map = new int[N][M];
+        for (int i=0; i<N; i++){
+            String tmp = sc.next();
+            for (int j=0; j<M; j++)
+                map[i][j] = tmp.charAt(j) - '0';
+        }
+
+        boolean[][][] used = new boolean[N][M][2]; // 이동 여부
+        int cnt = -1; // 최단 경로
+
+        int[] dx = {1, -1, 0, 0};
+        int[] dy = {0, 0, 1, -1};
+
+        Queue<int[]> q = new LinkedList<>();
+        q.add(new int[] {0, 0, 0, 1}); // x, y, 벽을 부수는 경우, 이동 거리
+        used[0][0][0] = true;
+        while (!q.isEmpty()) {
+            int[] tmp = q.poll();
+            
+            // 도착시
+            if (tmp[0] == N-1 && tmp[1] == M-1) {
+                cnt = tmp[3];
+                break;
+            }
+
+            // 상하죄우 이동
+            for (int i=0; i<4; i++) {
+                int nx = tmp[0] + dx[i];
+                int ny = tmp[1] + dy[i];
+
+                if (nx < 0 || nx >= N || ny < 0 || ny >= M)
+                    continue;
+
+                // 이동할 수 있으면
+                if (map[nx][ny] == 0 && !used[nx][ny][tmp[2]]) {
+                    q.add(new int[]{nx, ny, tmp[2], tmp[3] + 1});
+                    used[nx][ny][tmp[2]] = true;
+                }
+
+                // 벽인데 부술 수 있으면
+                if (map[nx][ny] == 1 && tmp[2] == 0 && !used[nx][ny][1]) {
+                    q.add(new int[]{nx, ny, tmp[2] + 1, tmp[3] + 1});
+                    used[nx][ny][1] = true;
+                }
+            }
+        }
+
+        System.out.println(cnt);
+    }
+}
