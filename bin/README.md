@@ -1,11 +1,57 @@
-### Java Spring template project
+## SW Aptitude Test IM 준비
 
-This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/gitlab-basics/create-project.html).
+<br><br>
 
-Improvements can be proposed in the [original project](https://gitlab.com/gitlab-org/project-templates/spring).
 
-### CI/CD with Auto DevOps
+## 📌 소개
+이 저장소는 **SW 적성평가 IM**을 준비하며 풀었던 문제와 풀이를 기록합니다.  
+문제 접근 방법, 시간 복잡도 분석, 실수 노트 등을 함께 정리해 두었습니다.
 
-This template is compatible with [Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/).
+<br><br>
 
-If Auto DevOps is not already enabled for this project, you can [turn it on](https://docs.gitlab.com/ee/topics/autodevops/#enabling-auto-devops) in the project settings.
+
+## 🛠 사용 기술
+- Language: Java (JDK 17)
+- IDE: Spring Tool Suite 4, Visual Studio Code
+- Algorithm Types: DFS, BFS, DP, Greedy, Simulation, Graph, etc.
+
+<br><br>
+
+
+## 📂 폴더 구조
+```
+📦 algo-proj
+┣ 📂 src/main/java
+┃ ┣ 📂 A형 대비문제
+┃ ┣ 📂 A형 회고
+┃ ┣ 📂 B형 특강
+┃ ┣ 📂 D1
+┃ ┣ 📂 D2
+┃ ┣ 📂 D3
+┃ ┣ 📂 D4
+┃ ┣ 📂 D5
+┃ ┣ 📂 D6
+┃ ┣ 📂 D8
+┃ ┣ 📂 dfs/N과M
+┃ ┣ 📂 과목평가
+┃ ┣ 📂 모의 SW 역량테스트 
+┃ ┣ 📂 백준
+┃ ┣ 📂 코드배틀
+┃ ┗ 📂 배틀싸피
+┣ 📜 README.md
+┗ 📜 .gitignore
+```
+
+<br><br>
+
+
+## 📖 문제 출처
+- SW Expert Academy
+- Baekjoon Online Judge
+
+<br><br>
+
+
+## 💡 규칙
+- 하루 최소 1문제 이상
+- 틀린 문제는 반드시 다시 풀기
