@@ -1,4 +1,4 @@
-package 프로그래머스;
+package 프로그래머스.고득점Kit.완전탐색;
 
 public class _2_카펫 {
 

@@ -1,4 +1,4 @@
-package 프로그래머스
+package 프로그래머스.고득점Kit.완전탐색
 
 class _2_소수찾기 {
 
